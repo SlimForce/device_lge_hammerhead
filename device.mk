@@ -296,9 +296,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # LTE, CDMA, GSM/WCDMA
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=10 \
-    telephony.lteOnCdmaDevice=1 \
-    persist.radio.mode_pref_nv10=1
+ gsm.current.phone-type=2 \
+ telephony.lteOnCdmaDevice=1 \
+ ro.telephony.default_network=4 \
+ ro.telephony.default_cdma_sub=0 \
+ persist.radio.mode_pref_nv10=0 
 
 # update 1x signal strength after 2s
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
