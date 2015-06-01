@@ -14,6 +14,19 @@
 # limitations under the License.
 #
 
+# Compiler flags
+TARGET_GCC_VERSION_EXP := 4.9
+TARGET_USE_PIPE := true
+USE_O3_OPTIMIZATIONS := true
+SUPPRES_UNUSED_WARNING := true
+KRAIT_TUNINGS := true
+ENABLE_GCCONLY := true
+GRAPHITE_OPTS := true
+STRICT_ALIASING := true
+BOOT_ZIP_OUT_FILE := SlimKernel-$(TARGET_DEVICE)-$(PLATFORM_VERSION)-$(shell date +"%Y%m%d")
+
+# Platform 
+
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH := arm
